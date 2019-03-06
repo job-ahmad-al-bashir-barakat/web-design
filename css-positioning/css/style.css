@@ -1,0 +1,283 @@
+body {
+    background: #eee;
+}
+
+.wrapper {
+    background: #fff;
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+}
+
+.wrapper:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+}
+
+.red {
+    background: red;
+    float: left;
+}
+
+.green {
+    background: green;
+    float: left;
+}
+
+.blue {
+    background: blue;
+    float: left;
+}
+
+.normal-document-flow p {
+    padding: 20px;
+    background-color: #e2e2e2;
+    font-family: Arial;
+    line-height: 1.4em;
+}
+
+/*
+ * (m:0) this not so good
+ * because it is add extra element no used to the dom
+ */
+.clearfix {
+    clear: both;
+}
+
+.services {
+    color: #999;
+    margin: 10px 0;
+    text-align: center;
+    /* to remove clear (m:1) this method solve margin issue*/
+    /*overflow: hidden;*/
+}
+
+.clipping {
+    max-height: 150px;
+    overflow: hidden;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+/* to remove clear (m:2) this method solve margin issue*/
+
+/*
+ * injected some empty content which is cleared all of floats and
+ * empty content is come at the very end of div services
+ * so the height will reach to this empty content because it is block
+ */
+/* overflow can be replace to this method */
+.services:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.services .service {
+    float: left;
+    background: #eee;
+    width: 29.33%;
+    padding: 1%;
+    margin: 1%;
+    height: 140px;
+    position: relative;
+}
+
+.services .service:nth-child(1) {
+    top: 5px;
+}
+
+.services .service:nth-child(2) {
+    top: 15px;
+}
+
+.services .service:nth-child(3) {
+    top: 25px;
+}
+
+.services .note {
+    background: #eee;
+    padding: 10px;
+    margin: 10px;
+    line-height: 1.4;
+}
+
+.content {
+    padding: 10px;
+    background: #ccc ;
+    /* to remove clear (m:3) this method doesn't solve margin issue*/
+    /* it doesn't solve margin issue because of it must have block cont above it*/
+    /*clear: both;*/
+    margin-top: 100px;
+}
+
+
+.columns section, .columns aside {
+    float: left;
+    width: 46%;
+    padding: 1%;
+    margin: 1%;
+    background-color: #f2f2f2;
+}
+
+.columns:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.content-column {
+    /*stay in normal doc flow*/
+    /*you can not offset element unless give it position*/
+    position: relative;
+    /*top: 50px;*/
+    /*top: 300px;*/
+    /*left: 50px;*/
+}
+
+.content-column p {
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 50px;
+    column-gap: 50px;
+    -webkit-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
+    text-align: justify;
+}
+
+#banner {
+    position: relative;
+    max-height: 300px;
+    overflow: hidden;
+    margin: 1%;
+    z-index: 2;
+}
+
+#banner  h2 {
+    /* default to 0,0 document if it isn't has relative */
+    position: absolute;
+    top: 30px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+nav {
+    background: #333;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* by default all element have z-index of 0 */
+    z-index: 1;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+nav li {
+    list-style: none;
+    margin: 0 auto;
+    color: #fff;
+    padding: 10px;
+    float: left;
+}
+
+/* stack-order */
+/* in stack order first html is the last in order -- like plates*/
+
+.stack-order {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.stack-context-0 {
+    background: #ee7470;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+
+    /* always default to 0,0 document */
+    position: fixed;
+    z-index: 1;
+}
+
+.stack-context-1 {
+    background: #333;
+    width: 100%;
+    height: 1900px;
+    top: 100px;
+
+    position: relative;
+    /*
+     *  each dimintional property left|right|top|bottom|z-index
+     *  must have postion property
+     */
+    /* if you add z-index : you start new stacking context */
+    z-index: 0;
+}
+
+.deep-stack-0 {
+    width: 100%;
+    height:150px;
+    background: #8f746c;
+    position: relative;
+    z-index: 2;
+}
+.extra-deep {
+    width: 100px;
+    height:100px;
+    background: #ff68d1;
+
+    position: relative;
+    z-index:2;
+}
+.deep-stack-1 {
+    width: 100%;
+    height:150px;
+    background: #47deee;
+
+    position: absolute;
+    top: 150px;
+    z-index: 3;
+}
+.deep-stack-2 {
+    width: 100%;
+    height:150px;
+    background: #39ff67;
+
+    position: absolute;
+    top: 190px;
+    z-index: 4;
+}
+.deep-stack-3 {
+    width: 100%;
+    height:150px;
+    background: #ff2238;
+
+    position: absolute;
+    /*top: 230px;*/
+    top: 20px;
+    z-index: 5;
+}
+

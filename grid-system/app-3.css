@@ -1,0 +1,45 @@
+.container {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.row {
+    clear: both;
+}
+
+.col-1:last-child,
+.col-2:last-child,
+.col-3:last-child,
+.col-4:last-child,
+.col-6:last-child{
+    margin-right: 0px;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-6 {
+    float: left;
+    margin-right: 20px;
+}
+
+.col-1 {
+    width: 235px;
+}
+
+.col-2 {
+    width: 490px;
+}
+
+.col-3 {
+    width: 320px;
+}
+
+.col-4 {
+    width: 745px;
+}
+
+.col-6 {
+    width: 660px;
+}

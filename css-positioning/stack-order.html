@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Positioning : Stacking Order</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="stack-order">
+    <!--if you add z-index each element inside it will have z-index of 1 in relation to body -->
+    <div class="stack-context-0"></div>
+
+    <!--if you add z-index each element inside it will have z-index of 0 in relation to body -->
+    <div class="stack-context-1">
+        <!--
+            if you add z-index of 2 this
+            will be in relation to stack-context-1
+            if it has z-index or it will
+            be in relation to panret z-index
+        -->
+        <div class="deep-stack-0">
+            <div class="extra-deep"></div>
+        </div>
+        <div class="deep-stack-1"></div>
+        <div class="deep-stack-2"></div>
+        <div class="deep-stack-3"></div>
+    </div>
+</div>
+
+</body>
+</html>

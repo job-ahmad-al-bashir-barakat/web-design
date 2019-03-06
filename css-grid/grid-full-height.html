@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid Layout - grid full height</title>
+    <style>
+        html, body {
+            height:100%;
+        }
+
+        .item {
+            border: 1px solid;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-areas:
+                    "header header"
+                    "nav main"
+                    "nav footer";
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 50px auto 50px;
+            height: 100%;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+        footer {
+            grid-area: footer;
+        }
+        header {
+            grid-area: header;
+        }
+        main {
+            grid-area: main;
+        }
+    </style>
+</head>
+<body>
+    <main class="gallery">
+        <header class="item">header</header>
+        <nav class="item">nav</nav>
+        <main class="item">main</main>
+        <footer class="item">footer</footer>
+    </main>
+</body>
+</html>

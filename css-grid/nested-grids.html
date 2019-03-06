@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nested Grids</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-gap: 10px;
+        }
+
+        .a {
+            grid-row: 3;
+            grid-column: 3 / span 2; /* 5 = span 2 */
+            display: grid;
+            grid-template-columns: repeat(2 ,1fr);
+            grid-gap: 10px;
+        }
+
+        .a > .box {
+            background-color: red;
+        }
+
+        .b {
+            grid-column: 3 / 5;
+        }
+
+        .box {
+            background-color: #444;
+            color: #fff;
+            border-radius: 2px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--span 2-->
+    <div class="container">
+        <div class="box a">
+            <div class="box">a1</div>
+            <div class="box">a2</div>
+            <div class="box">a3</div>
+            <div class="box">a4</div>
+            <div class="box">a5</div>
+            <div class="box">a6</div>
+        </div>
+        <div class="box b">2</div>
+        <div class="box c">3</div>
+        <div class="box d">4</div>
+        <div class="box e">5</div>
+        <div class="box f">6</div>
+        <div class="box g">7</div>
+        <div class="box h">8</div>
+    </div>
+</body>
+</html>

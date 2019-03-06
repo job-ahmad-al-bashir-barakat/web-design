@@ -1,0 +1,138 @@
+/*
+ * Inheritance
+ */
+body {
+    color: red;
+    background-color: #eee;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+
+/*
+ *  Selector Specificty
+ */
+#p {
+    color: green;
+}
+
+p {
+    color: chartreuse;
+}
+
+p {
+    color: red !important;
+}
+
+#main-content p {
+    color: aqua;
+}
+
+.test {
+    color: black;
+}
+
+strong {
+    color: blueviolet;
+}
+
+/*
+ * Adjacent Selectors
+ */
+
+#all-article h1 + p {
+    width: 500px;
+}
+
+.articles article:nth-of-type(2n + 1) {
+    background-color: yellow;
+}
+
+
+/*
+ * text-decoration
+ */
+
+.text-decoration-cont {
+    text-decoration: overline;
+}
+
+/* if you remove this will take the default */
+/*
+ * text-decoration: text-decoration-line text-decoration-color text-decoration-style|initial|inherit;
+ * initial : Sets this property to its default value.
+ */
+a.text-decoration {
+    text-decoration: underline overline double red;
+}
+
+
+/*
+ * Box Model
+ */
+
+.box-model {
+    background: #fff;
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 20px;
+}
+
+.box-model .box {
+    margin: 30px;
+    padding: 30px;
+    border: 30px solid #000;
+
+    /*width: 100%;*/
+
+    /*width: 400px;*/
+    /*height: 200px;*/
+}
+
+.margin {
+    background: #fff;
+    margin: 15px auto;
+    width: 75%;
+    height: 100%;
+    padding: 20px;
+}
+
+.margin .box {
+    margin:  30px auto;
+    padding: 30px;
+    border: 1px solid #000;
+
+    width: 50%;
+    /*width: 100%;*/
+
+    /*width: 400px;*/
+    /*height: 200px;*/
+}
+
+
+/*
+ * Block-level Elements
+ */
+
+.inline {
+    background: #fff;
+    margin: 15px auto;
+    width: 75%;
+    height: 100%;
+    padding: 20px;
+}
+
+.inline a {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #000;
+    background-color: #eee;
+    text-decoration: none;
+    /*width: 100px;*/
+    /*display: block;*/
+    /*display: inline-block;*/
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin-top: 40px;
+            padding: 0 50px;
+        }
+
+        .container {
+            background: #333;
+            display: grid;
+            /*grid-template-columns: repeat(2 ,1fr);*/
+            /*grid-template-columns: repeat(5 ,100px);*/
+            grid-template-columns: repeat(5 ,minmax(100px ,1fr));
+            /*auto-fill many column as many as you can (as many tracks)*/
+            /*grid-template-columns: repeat(auto-fill ,100px);*/
+            /*grid-template-columns: repeat(auto-fill ,minmax(100px ,1fr));*/
+            /*with auto-fit all unused tracks will be with width of zero*/
+            /*grid-template-columns: repeat(auto-fit ,minmax(100px ,1fr));*/
+            grid-gap: 10px;
+        }
+
+        .box {
+            background: #34e2d2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+        <div class="box">E</div>
+    </div>
+</body>
+</html>

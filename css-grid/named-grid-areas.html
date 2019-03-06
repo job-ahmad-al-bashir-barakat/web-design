@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Named Grid Areas</title>
+    <style>
+        /*
+        #example1.container {
+            display: grid;
+        }
+        !*Grid Areas is short hand for grid-column-start and grid-column-end*!
+        !* grid-area: default to auto menu auto-placement; *!
+        #example1 header { grid-area: auto; background-color: red; }
+        #example1 nav { background-color: green; }
+        #example1 main { background-color: yellow; }
+        #example1 footer { background-color: blue; }
+        */
+
+        #example1.container {
+            display: grid;
+            grid-template-columns: 150px auto;
+            grid-template-rows: 100px auto 100px;
+            grid-template-areas:
+                    "header header"
+                    "nav main"
+                    "footer footer";
+
+                    /*"nav header"*/
+                    /*"nav main"*/
+                    /*"nav footer";*/
+
+            grid-gap: 10px;
+
+            /*grid-row-gap: 10px;*/
+            /*grid-column-gap: 10px;*/
+        }
+        /*Grid Areas is short hand for grid-column-start and grid-column-end*/
+        /* grid-area: default to auto menu auto-placement; */
+        #example1 header { grid-area: header; background-color: red; }
+        #example1 nav { grid-area: nav; background-color: green; }
+        #example1 main { grid-area: main; background-color: yellow; }
+        #example1 footer { grid-area: footer; background-color: blue; }
+    </style>
+</head>
+<body>
+    <div id="example1" class="container">
+        <header>header</header>
+        <nav>nav</nav>
+        <main>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid asperiores consequuntur incidunt inventore laborum possimus soluta ut vitae, voluptas. Aliquid aspernatur excepturi explicabo minima nobis quae reprehenderit suscipit unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid asperiores consequuntur incidunt inventore laborum possimus soluta ut vitae, voluptas. Aliquid aspernatur excepturi explicabo minima nobis quae reprehenderit suscipit unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid asperiores consequuntur incidunt inventore laborum possimus soluta ut vitae, voluptas. Aliquid aspernatur excepturi explicabo minima nobis quae reprehenderit suscipit unde.</main>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

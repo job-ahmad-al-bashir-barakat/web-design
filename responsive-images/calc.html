@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calc</title>
+    <style>
+
+        /*Positioning an object on screen with a margin*/
+
+        .banner {
+            position: absolute;
+            left: calc(40px);
+            width: calc(100% - 80px);
+            border: solid black 1px;
+            box-shadow: 1px 2px;
+            background-color: yellow;
+            padding: 6px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /*Automatically sizing form fields to fit their container*/
+
+        input {
+            padding: 2px;
+            display: block;
+            width: calc(100% - 1em);
+        }
+
+        #formbox {
+            width: calc(100% / 6);
+            border: 1px solid black;
+            padding: 4px;
+        }
+
+        /*Nested calc() with CSS Variables*/
+
+        .foo {
+            --widthA: 100px;
+            --widthB: calc(var(--widthA) / 2);
+            --widthC: calc(var(--widthB) / 2);
+            width: var(--widthC);
+        }
+    </style>
+</head>
+<body>
+<form>
+    <!--https://developer.mozilla.org/en-US/docs/Web/CSS/calc-->
+
+    <div class="banner">This is a banner!</div>
+
+    <div id="formbox">
+        <label>Type something:</label>
+        <input type="text">
+        <input type="text" class="foo">
+    </div>
+</form>
+</body>
+</html>

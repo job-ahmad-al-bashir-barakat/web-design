@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Positioning</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!--stacking order : this has stacking context of 1-->
+    <nav>
+        <ul>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+        </ul>
+    </nav>
+
+    <!--stacking order : this has stacking context of 0-->
+    <!--all element inside it will have staking order of 0 -->
+    <div class="wrapper">
+
+        <div id="banner">
+            <img src="img/lead-banner.jpg" width="100%">
+            <h2>Hi Every One</h2>
+        </div>
+
+        <!--Normal Document Flow-->
+        <!--<div class="normal-document-flow">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at consequatur deleniti distinctio eaque est illo itaque maxime nam nemo, odit perferendis quae sint sit suscipit temporibus voluptate? Asperiores, pariatur!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at consequatur deleniti distinctio eaque est illo itaque maxime nam nemo, odit perferendis quae sint sit suscipit temporibus voluptate? Asperiores, pariatur!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at consequatur deleniti distinctio eaque est illo itaque maxime nam nemo, odit perferendis quae sint sit suscipit temporibus voluptate? Asperiores, pariatur!</p>
+        </div>-->
+        <!--Floating Elements-->
+
+        <!--float-->
+        <!--<div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>-->
+
+        <!--Clearing Floats-->
+        <div class="services <!--overflow-->">
+            <div class="clip service">
+                <h1>Service 1</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="clip service">
+                <h1>Service 1</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="clip service">
+                <h1>Service 1</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="service">
+                <h1>Service 1</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="note clearfix">
+                <h1>Note</h1>
+                Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada.
+            </div>
+        </div>
+
+
+        <div class="clipping services">
+            <div class="clip service">
+                <h1>Service 1</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="clip service">
+                <h1>Service 1</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="clip service">
+                <h1>Service 1</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+        <!--<div class="clearfix"></div>-->
+
+        <div class="content">
+            <h1>Content</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ad aliquid commodi consequuntur illo libero modi, perferendis porro reprehenderit sapiente sed, sequi tenetur voluptatem? Accusamus asperiores eos eum expedita perferendis?
+            </p>
+        </div>
+
+        <div class="content-column">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ab, ad consequuntur esse expedita hic laboriosam omnis pariatur placeat rem saepe!
+                Aliquam cumque error exercitationem quidem repudiandae sunt ut? Magni, sequi?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At debitis dicta dolorem natus nobis quam quas qui, quidem sequi veritatis.
+                Accusantium illum magnam maiores necessitatibus qui saepe unde vero, voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque autem commodi, consequatur delectus dignissimos distinctio doloribus dolorum eos eveniet, explicabo,
+                facere harum officia quas quod repellat sint temporibus veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ab, ad consequuntur esse expedita hic laboriosam omnis pariatur placeat rem saepe!
+                Aliquam cumque error exercitationem quidem repudiandae sunt ut? Magni, sequi?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At debitis dicta dolorem natus nobis quam quas qui, quidem sequi veritatis.
+                Accusantium illum magnam maiores necessitatibus qui saepe unde vero, voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque autem commodi, consequatur delectus dignissimos distinctio doloribus dolorum eos eveniet, explicabo,
+                facere harum officia quas quod repellat sint temporibus veritatis.
+            </p>
+        </div>
+
+        <div class="columns">
+            <section>
+                <h2>this is column 1</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae consequatur, culpa eius et illo minima nisi numquam, optio quaerat reiciendis sapiente sint sit tenetur vero voluptas voluptatibus. Mollitia!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae consequatur, culpa eius et illo minima nisi numquam, optio quaerat reiciendis sapiente sint sit tenetur vero voluptas voluptatibus. Mollitia!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae consequatur, culpa eius et illo minima nisi numquam, optio quaerat reiciendis sapiente sint sit tenetur vero voluptas voluptatibus. Mollitia!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae consequatur, culpa eius et illo minima nisi numquam, optio quaerat reiciendis sapiente sint sit tenetur vero voluptas voluptatibus. Mollitia!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae consequatur, culpa eius et illo minima nisi numquam, optio quaerat reiciendis sapiente sint sit tenetur vero voluptas voluptatibus. Mollitia!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, autem blanditiis consequatur cum enim hic odio officiis omnis quia ratione reiciendis repudiandae, sed totam! Autem iste nemo odit officiis quod?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, autem blanditiis consequatur cum enim hic odio officiis omnis quia ratione reiciendis repudiandae, sed totam! Autem iste nemo odit officiis quod?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, autem blanditiis consequatur cum enim hic odio officiis omnis quia ratione reiciendis repudiandae, sed totam! Autem iste nemo odit officiis quod?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, autem blanditiis consequatur cum enim hic odio officiis omnis quia ratione reiciendis repudiandae, sed totam! Autem iste nemo odit officiis quod?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, autem blanditiis consequatur cum enim hic odio officiis omnis quia ratione reiciendis repudiandae, sed totam! Autem iste nemo odit officiis quod?
+                </p>
+            </section>
+            <aside>
+                <h1>this is column 2</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, blanditiis dicta eligendi eveniet ex excepturi hic in laudantium necessitatibus officiis quae quo, ratione ullam vero voluptas. Asperiores dolore repudiandae similique.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, blanditiis dicta eligendi eveniet ex excepturi hic in laudantium necessitatibus officiis quae quo, ratione ullam vero voluptas. Asperiores dolore repudiandae similique.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, blanditiis dicta eligendi eveniet ex excepturi hic in laudantium necessitatibus officiis quae quo, ratione ullam vero voluptas. Asperiores dolore repudiandae similique.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, blanditiis dicta eligendi eveniet ex excepturi hic in laudantium necessitatibus officiis quae quo, ratione ullam vero voluptas. Asperiores dolore repudiandae similique.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, blanditiis dicta eligendi eveniet ex excepturi hic in laudantium necessitatibus officiis quae quo, ratione ullam vero voluptas. Asperiores dolore repudiandae similique.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, blanditiis dicta eligendi eveniet ex excepturi hic in laudantium necessitatibus officiis quae quo, ratione ullam vero voluptas. Asperiores dolore repudiandae similique.
+                </p>
+                <img src="img/lead-banner.jpg" alt="" width="100%">
+            </aside>
+        </div>
+
+    </div>
+
+</body>
+</html>
