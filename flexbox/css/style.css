@@ -20,7 +20,7 @@ body{
 
 .box {
     height: 100px;
-    min-width: 100px;
+    width: 320px;
     /*float: left;*/
     /*flex-grow: 1;*/
 }
@@ -33,14 +33,14 @@ body{
 
 .one {
     background-color: red;
-    flex-grow: 3;
+    flex-shrink: 3;
 }
 .two {
     background-color: blue;
-    flex-grow: 2;
+    flex-shrink: 4;
 }
 .three {
     background-color: green;
-    flex-grow: 1;
+    flex-shrink: 6;
 }
 
