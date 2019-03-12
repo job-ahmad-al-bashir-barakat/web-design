@@ -16,31 +16,25 @@ body{
 .flex-container {
     display: flex;
     background: #fff;
+    /*flex-wrap: wrap;*/
+    /*flex-wrap: wrap-reverse;*/
+    /*flex-wrap: nowrap;*/ /*default*/
+
 }
 
 .box {
     height: 100px;
-    width: 320px;
-    /*float: left;*/
-    /*flex-grow: 1;*/
+    min-width: 200px;
+    flex-grow: 1;
 }
-
-/*.flex-container:after {
-    content: '';
-    display: block;
-    clear: both;
-}*/
 
 .one {
     background-color: red;
-    flex-shrink: 3;
 }
 .two {
     background-color: blue;
-    flex-shrink: 4;
 }
 .three {
     background-color: green;
-    flex-shrink: 6;
 }
 
