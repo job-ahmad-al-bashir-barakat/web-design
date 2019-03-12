@@ -16,25 +16,31 @@ body{
 .flex-container {
     display: flex;
     background: #fff;
-    /*flex-wrap: wrap;*/
-    /*flex-wrap: wrap-reverse;*/
-    /*flex-wrap: nowrap;*/ /*default*/
-
+    flex-wrap: wrap;
 }
 
 .box {
     height: 100px;
-    min-width: 200px;
+    /*min-width: 200px;*/
+    /*flex-basis similar to min-width: it is define starting width to an element*/
+    /*flex-basis: 200px;*/
+
     flex-grow: 1;
 }
 
 .one {
     background-color: red;
+    /*min-width: 100px;*/
+    flex-basis: 100px;
 }
 .two {
     background-color: blue;
+    /*min-width: 200px;*/
+    flex-basis: 200px;
 }
 .three {
     background-color: green;
+    /*min-width: 300px;*/
+    flex-basis: 300px;
 }
 
