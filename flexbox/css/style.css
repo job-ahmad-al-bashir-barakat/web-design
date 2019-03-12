@@ -28,24 +28,54 @@ nav a {
     text-align: center;
     display: block;
     padding: 10px;
-    /*background-color: #777;*/
+}
+
+
+a.fb {
+    background: url(../img/fb.png) no-repeat center;
+}
+
+a.tw {
+    background: url(../img/tw.png) no-repeat center;
+}
+
+nav ul.social {
+    display: flex;
+    flex: 1 1 0;
+    max-width: 80px;
+    margin: 0 auto;
+}
+
+nav ul.social li {
+    flex: 1 1 0;
+}
+
+.social a {
+    background-size: 80%;
+    text-indent: -10000px;
 }
 
 nav a:hover {
-    background: #555;
+    background-color: #555;
 }
 
 @media screen and (min-width: 768px) {
+
     nav ul {
         display: flex;
-        justify-content: flex-start; /*default*/
-        /*justify-content: flex-end;*/
-        /*justify-content: space-between;*/
-        /*justify-content: space-around;*/
-        /*justify-content: space-evenly;*/
+        justify-content: flex-start;
     }
 
     nav ul li {
         flex: 1 1 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul.social {
+        margin: 0;
     }
 }
