@@ -30,7 +30,12 @@ body{
     /*don't shrink when reach to lower 500px*/
     /*min-width: 500px;*/
     /*shrink when reach to lower 500px*/
-    flex-basis: 500px;
+    /*flex-basis: 500px;*/
+
+    /*test*/
+    /*flex-grow flex-shrink flex-basis*/
+    /*flex: 1 0 200px;*/
+    flex: 1; /*flex: 1 1 0;*/
 }
 
 .one {
