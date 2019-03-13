@@ -13,69 +13,29 @@ body{
     margin: 0 auto;
 }
 
-nav {
-    background: #333;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    padding: 10px;
-}
-
-
-a.fb {
-    background: url(../img/fb.png) no-repeat center;
-}
-
-a.tw {
-    background: url(../img/tw.png) no-repeat center;
-}
-
-nav ul.social {
+.flex-container {
     display: flex;
-    flex: 1 1 0;
-    max-width: 80px;
-    margin: 0 auto;
+    background: #fff;
+    flex-wrap: wrap;
+    /* row-reverse : reverse the order of boxes and put then on the right */
+    flex-flow: column; /*column-reverse/row/row-reverse*/
+    /* just apply to main axis */
+    justify-content: flex-start;
+    height: 800px;
 }
 
-nav ul.social li {
-    flex: 1 1 0;
+.box {
+    height: 100px;
+    flex: 0 0 100px;
 }
 
-.social a {
-    background-size: 80%;
-    text-indent: -10000px;
+.one {
+    background-color: red;
+}
+.two {
+    background-color: blue;
+}
+.three {
+    background-color: green;
 }
 
-nav a:hover {
-    background-color: #555;
-}
-
-@media screen and (min-width: 768px) {
-
-    nav ul {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    nav ul li {
-        flex: 1 1 0;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    nav ul.social {
-        margin: 0;
-    }
-}
