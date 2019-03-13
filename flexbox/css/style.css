@@ -17,8 +17,7 @@ body{
 #blocks {
     display: flex;
     flex-flow: row wrap;
-    /*align-items: center;*/
-    align-content: center; /*flex-start|flex-end|space-between|space-aroun|stretch|center*/
+
     margin: 10px;
     height: 100vh;
 }
@@ -31,6 +30,7 @@ body{
 }
 
 .one {
+    align-self: center;
 }
 
 .tow {
