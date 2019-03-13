@@ -18,30 +18,37 @@ body{
     display: flex;
     margin: 10px;
     justify-content: space-between;
+    /*
+        The flex-flow property is a shorthand
+        property for setting both the flex-direction and flex-wrap properties.
+    */
+    flex-flow: row wrap;
+    /*The stretch value stretches the flex items to fill the container (this is default)*/
+    align-items: stretch;
+    /*The baseline value aligns the flex items such as their baselines aligns*/
+    align-items: baseline;
+    height: 100vh;
 }
 
 #blocks div {
-    flex: 0 0 100px;
+    flex: 1 0 200px;
     padding: 40px 0;
     text-align: center;
     background: #ccc;
 }
 
 .one {
-    /* you can add minus number*/
-    /*lower number goes first*/
-    /*hight number goes last*/
-    order: 3; /*-3 goes first : it is smaller num*/
+    font-size: 15px;
 }
 
 .tow {
-    order: 2;
+    font-size: 50px;
 }
 
 .three {
-    order: 1;
+    font-size: 30px;
 }
 
 .four {
-    order: 0;
+    font-size: 60px;
 }
