@@ -33,7 +33,10 @@ section {
 }
 
 .place-items {
-    /*https://developer.mozilla.org/en-US/docs/Web/CSS/place-items*/
+    /*
+    https://developer.mozilla.org/en-US/docs/Web/CSS/place-items
+    https://developer.mozilla.org/en-US/docs/Web/CSS/place-self
+    */
     /*
      The CSS place-items shorthand property sets the align-items and justify-items properties,
      respectively. If the second value is not set, the first value is also used for it.
@@ -48,6 +51,11 @@ section {
 }
 
 .one {
+    /*
+    The place-self CSS property is a shorthand property sets both the align-self and justify-self properties. The first value is the align-self property value, the second the justify-self one.
+    If the second value is not present, the first value is also used for it.
+    */
+    place-self: flex-end flex-end;
 }
 
 .tow {
