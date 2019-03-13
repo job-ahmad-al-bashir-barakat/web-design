@@ -16,39 +16,28 @@ body{
 
 #blocks {
     display: flex;
-    margin: 10px;
-    justify-content: space-between;
-    /*
-        The flex-flow property is a shorthand
-        property for setting both the flex-direction and flex-wrap properties.
-    */
     flex-flow: row wrap;
-    /*The stretch value stretches the flex items to fill the container (this is default)*/
-    align-items: stretch;
-    /*The baseline value aligns the flex items such as their baselines aligns*/
-    align-items: baseline;
+    /*align-items: center;*/
+    align-content: center; /*flex-start|flex-end|space-between|space-aroun|stretch|center*/
+    margin: 10px;
     height: 100vh;
 }
 
 #blocks div {
-    flex: 1 0 200px;
+    flex: 0 0 200px;
     padding: 40px 0;
     text-align: center;
     background: #ccc;
 }
 
 .one {
-    font-size: 15px;
 }
 
 .tow {
-    font-size: 50px;
 }
 
 .three {
-    font-size: 30px;
 }
 
 .four {
-    font-size: 60px;
 }
