@@ -30,14 +30,13 @@ section {
     grid-auto-rows: 40px;
     grid-gap: 10px;
     height: 180px;
+    width: 220px;
 }
 
 .align-content {
-    /*https://developer.mozilla.org/en-US/docs/Web/CSS/align-content*/
-    /*https://developer.mozilla.org/en-US/docs/Web/CSS/align-items*/
-    /*https://developer.mozilla.org/en-US/docs/Web/CSS/align-self*/
-    align-content: center;
-    align-items: center;
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/place-content*/
+    /*The place-content CSS property is a shorthand for align-content and justify-content.*/
+    place-content: flex-start flex-end;
 }
 
 #items div {
@@ -47,7 +46,6 @@ section {
 }
 
 .one {
-    align-self: flex-end;
 }
 
 .tow {
