@@ -14,114 +14,34 @@ body{
     margin: 0 auto;
 }
 
-/* menu base styles */
-
-nav{
-    background: #333;
-}
-
-nav ul{
-    list-style-type: none;
-    padding: 0;
-}
-
-nav a{
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    display: block;
-    padding: 10px;
-}
-
-nav a:hover{
-    background-color: #555;
-}
-
-/* social menu base styles */
-
-a.tw{
-    background: url(../img/tw.png) no-repeat center;
-    background-size: 80%;
-
-}
-
-a.fb{
-    background: url(../img/fb.png) no-repeat center;
-    background-size: 80%;
-}
-
-.social a{
-    text-indent: -10000px;
-    margin: 0 auto;
-}
-
-.social{
-    max-width: 80px;
-    margin: 0 auto; /* do at end */
-}
-
-/* grid vs flex base styles */
-
 #blocks {
-    margin: 20px;
-}
-
-article {
-    background: #fff;
-    margin-bottom: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-article h2 {
-    font-size: 20px;
-    text-align: center;
-    margin: 10px 0;
-}
-
-/* flex styles */
-
-nav ul.social li{
-    flex: 1 1 0;
-}
-
-nav ul.social{
-    flex: 1 1 0;
     display: flex;
+    margin: 10px;
+    justify-content: space-between;
 }
 
-@media screen and (min-width: 768px){
+#blocks div {
+    flex: 0 0 100px;
+    padding: 40px 0;
+    text-align: center;
+    background: #ccc;
+}
 
-    nav ul{
-        display: flex;
-    }
+.one {
+    /* you can add minus number*/
+    /*lower number goes first*/
+    /*hight number goes last*/
+    order: 3; /*-3 goes first : it is smaller num*/
+}
 
-    nav li{
-        flex: 1 1 0;
-    }
+.tow {
+    order: 2;
+}
 
-    nav{
-        display: flex;
-        justify-content: space-between;
-    }
+.three {
+    order: 1;
+}
 
-    ul.social{
-        margin: 0;
-    }
-    
-    #blocks {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    article {
-        flex: 0 1 32%;
-        transition: flex-basis 0.2s linear;
-    }
-
-    article.stack {
-        flex: 0 1 100%;
-    }
-
-} /* end media 768 */
+.four {
+    order: 0;
+}
