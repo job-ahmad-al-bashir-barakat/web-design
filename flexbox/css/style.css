@@ -33,7 +33,7 @@ section {
 }
 
 .place-items {
-    /*https://developer.mozilla.org/en-US/docs/Web/CSS/place-content*/
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/place-items*/
     /*
      The CSS place-items shorthand property sets the align-items and justify-items properties,
      respectively. If the second value is not set, the first value is also used for it.
