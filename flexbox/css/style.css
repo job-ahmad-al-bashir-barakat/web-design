@@ -26,16 +26,18 @@ section {
     border: .75em solid;
     padding: .75em;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60px 60px;
     grid-auto-rows: 40px;
     grid-gap: 10px;
-    width: 220px;
+    height: 180px;
 }
 
-.justify-items {
-    /*https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items*/
-    /*https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self*/
-    justify-items: center;
+.align-content {
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/align-content*/
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/align-items*/
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/align-self*/
+    align-content: center;
+    align-items: center;
 }
 
 #items div {
@@ -45,7 +47,7 @@ section {
 }
 
 .one {
-    justify-self: flex-start;
+    align-self: flex-end;
 }
 
 .tow {
