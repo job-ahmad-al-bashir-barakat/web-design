@@ -19,12 +19,15 @@ body{
     flex-wrap: wrap;
     /* row-reverse : reverse the order of boxes and put then on the right */
     flex-flow: column; /*column-reverse/row/row-reverse*/
+    height: 100vh;
     /* just apply to main axis */
-    justify-content: flex-start;
-    height: 800px;
+    justify-content: center;
+    /* just apply to cross axis */
+    align-items: center;
 }
 
 .box {
+    width: 100px;
     height: 100px;
     flex: 0 0 100px;
 }
