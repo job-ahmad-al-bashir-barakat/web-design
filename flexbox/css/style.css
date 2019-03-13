@@ -33,7 +33,7 @@ section {
     width: 220px;
 }
 
-.align-content {
+.place-content {
     /*https://developer.mozilla.org/en-US/docs/Web/CSS/place-content*/
     /*The place-content CSS property is a shorthand for align-content and justify-content.*/
     place-content: flex-start flex-end;
