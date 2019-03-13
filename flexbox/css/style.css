@@ -14,24 +14,37 @@ body{
     margin: 0 auto;
 }
 
-#blocks {
+section {
     display: flex;
-    flex-flow: row wrap;
-
-    margin: 10px;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
 }
 
-#blocks div {
-    flex: 0 0 200px;
-    padding: 40px 0;
+#items {
+    background-color: #eee;
+    border: .75em solid;
+    padding: .75em;
+    width: 220px;
+    display: grid;
+    grid-template-columns: 60px 60px;
+    grid-auto-rows: 40px;
+    grid-gap: 10px;
+}
+
+.justify-content {
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content*/
+    justify-content: flex-end;
+}
+
+#items div {
+    background-color: rgba(0,0,255,.2);
+    border: 3px solid #00f;
     text-align: center;
-    background: #ccc;
 }
 
 .one {
-    align-self: center;
-}
+    }
 
 .tow {
 }
