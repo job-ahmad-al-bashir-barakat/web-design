@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .min,.max {
+            background-color: red;
+            color: black;
+        }
+
+        @media screen and (min-width: 600px) {
+            .min {
+                background-color: green;
+                color: white;
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+            .min {
+                background-color: blue;
+                color: white;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            .max {
+                background-color: blue;
+                color: white;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .max {
+                background-color: green;
+                color: white;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="min">
+    <h1>Resize the browser window to see the effect!</h1>
+</div>
+
+<div class="max">
+    <h1>Resize the browser window to see the effect!</h1>
+</div>
+
+</body>
+</html>
