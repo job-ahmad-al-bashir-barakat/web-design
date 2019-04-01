@@ -1,0 +1,54 @@
+{
+  "name": "smasoso-company",
+  "description": "smasoso-company templete",
+  "main": "index.js",
+  "authors": [
+    "Ahmad Al Bashir Barakat"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "owl.carousel": "OwlCarousel2#^2.3.4",
+    "popper.js": "^1.14.7",
+    "parallax.js": "^1.5.0",
+    "leaflet": "^1.4.0",
+    "leaflet-fullscreen": "^1.0.2"
+  },
+  "exportsOverride": {
+    "bootstrap" : {
+      "js": "dist/**/bootstrap.js",
+      "css": "dist/**/bootstrap.css"
+    },
+    "jquery" : {
+      "js": "dist/**/jquery.js"
+    },
+    "popper.js" : {
+      "js": "dist/**/popper.js"
+    },
+    "parallax.js" : {
+      "js": "parallax.js"
+    },
+    "leaflet" : {
+      "css": "dist/**/leaflet.css",
+      "js": "dist/**/leaflet.js"
+    },
+    "leaflet-fullscreen" : {
+      "css": "dist/**/leaflet.fullscreen.css",
+      "js": "dist/**/leaflet.fullscreen.js"
+    },
+    "*": {
+      "js": "dist/**/*.js",
+      "css": "dist/**/*.css"
+    }
+  }
+}
