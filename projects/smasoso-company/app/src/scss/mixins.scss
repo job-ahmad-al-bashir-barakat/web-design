@@ -1,0 +1,111 @@
+@mixin line($color, $margin: null, $width: 50px ,$thin: 6px) {
+  &:after {
+    content: '';
+    display: block;
+    width: $width;
+    margin: if($margin == null, 20px auto 0, $margin);
+    border-bottom: $thin solid $color;
+    @content
+  }
+}
+
+@mixin lineBefore($color, $margin: null, $width: 50px ,$thin: 6px) {
+  &:before {
+    content: '';
+    display: block;
+    width: $width;
+    margin: if($margin == null, 20px auto 0, $margin);
+    border-bottom: $thin solid $color;
+    @content
+  }
+}
+
+@mixin halfOverlaySection($color, $pos) {
+  &:after {
+    content: "";
+    display: block;
+    background: $color;
+    position: absolute;
+    min-height: 100vh;
+    width: 35%;
+    top: 0;
+    #{$pos}: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: (75/100);
+  }
+}
+
+@mixin overlay($color, $opacity, $place: 'before') {
+  &:#{$place} {
+    content: '';
+    position: absolute;
+    display: block;
+    background: $color;
+    opacity: $opacity;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    @content
+  }
+}
+
+@mixin mapShadow() {
+  &.overlay:before {
+    content: "";
+    position: absolute;
+    display: block;
+    box-shadow: 0px 50px 100px 0 rgba(0, 0, 0, 0.42) inset;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+  }
+}
+
+@mixin spacing() {
+
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      @each $prop, $abbrev in (margin: m, padding: p) {
+        @each $size, $length in $spacers {
+          .#{$abbrev}#{$infix}-#{$size} {
+            #{$prop}: $length !important;
+          }
+          .#{$abbrev}tb#{$infix}-#{$size} {
+            #{$prop}: $length 0 !important;
+          }
+          .#{$abbrev}t#{$infix}-#{$size} {
+            #{$prop}-top: $length !important;
+          }
+          .#{$abbrev}r#{$infix}-#{$size} {
+            #{$prop}-right: $length !important;
+          }
+          .#{$abbrev}b#{$infix}-#{$size} {
+            #{$prop}-bottom: $length !important;
+          }
+          .#{$abbrev}l#{$infix}-#{$size} {
+            #{$prop}-left: $length !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin downPage() {
+  .down {
+    position: absolute;
+    text-align: center;
+    bottom: 25px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    img {
+      width: 20px;
+    }
+  }
+}
+

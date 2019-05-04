@@ -22,29 +22,46 @@
     "popper.js": "^1.14.7",
     "parallax.js": "^1.5.0",
     "leaflet": "^1.4.0",
-    "leaflet-fullscreen": "^1.0.2"
+    "leaflet-fullscreen": "^1.0.2",
+    "fontAwesome": "fontawesome#^5.8.1"
   },
   "exportsOverride": {
-    "bootstrap" : {
-      "js": "dist/**/bootstrap.js",
-      "css": "dist/**/bootstrap.css"
+    "bootstrap": {
+      "/": [
+        "dist/**/bootstrap.css",
+        "dist/**/bootstrap.js"
+      ]
     },
-    "jquery" : {
-      "js": "dist/**/jquery.js"
+    "jquery": {
+      "/": "dist/**/jquery.js"
     },
-    "popper.js" : {
-      "js": "dist/**/popper.js"
+    "popper.js": {
+      "/": "dist/**/popper.js"
     },
-    "parallax.js" : {
-      "js": "parallax.js"
+    "parallax.js": {
+      "/": "parallax.js"
     },
-    "leaflet" : {
-      "css": "dist/**/leaflet.css",
-      "js": "dist/**/leaflet.js"
+    "owl.carousel": {
+      "/": [
+        "dist/**/owl.carousel.css",
+        "dist/**/owl.carousel.js",
+        "dist/**/*.png",
+        "dist/**/*.gif"
+      ]
     },
-    "leaflet-fullscreen" : {
-      "css": "dist/**/leaflet.fullscreen.css",
-      "js": "dist/**/leaflet.fullscreen.js"
+    "leaflet": {
+      "/": [
+        "dist/**/leaflet.css",
+        "dist/**/leaflet.js"
+      ],
+      "images": "dist/images"
+    },
+    "leaflet-fullscreen": {
+      "/": [
+        "dist/**/leaflet.fullscreen.css",
+        "dist/**/leaflet.fullscreen.js",
+        "dist/**/*.png"
+      ]
     },
     "*": {
       "js": "dist/**/*.js",

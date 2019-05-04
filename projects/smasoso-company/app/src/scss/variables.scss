@@ -1,0 +1,44 @@
+/*!
+ * Author: Ahmad al bashir barakat
+ * Version: 1.0
+ */
+
+// colors
+$white: #fff !default;
+$orange: #ff9700 !default;
+$gray: #e0e0e0 !default;
+$darkGray: #b4b4b4 !default;
+$black: #000 !default;
+$lightBlack: #191919;
+$lighterBlack: #333333;
+$lightBlue: #009dff !default;
+
+// media
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+) !default;
+
+
+$xs: map_get($grid-breakpoints, 'xs');
+$sm: map_get($grid-breakpoints, 'sm');
+$md: map_get($grid-breakpoints, 'md');
+$lg: map_get($grid-breakpoints, 'lg');
+$xl: map_get($grid-breakpoints, 'xl');
+
+// spacers
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+    (
+        6: ($spacer * 6),
+        7: ($spacer * 12),
+        8: ($spacer * 24),
+        9: ($spacer * 48),
+    ),
+    $spacers
+);

@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Smasoso Company</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400i|Raleway:300,400,500,700,800,900" rel="stylesheet">
+    <!-- Assets -->
+    <link href="css/styles.d41d8cd98f00b204e9800998ecf8427e.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrapper">
+    <!--Header Start-->
+    <header id="header-section">
+        <nav class="navbar navbar-light navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="160px" height="90px">
+                        <image x="0px" y="0px" width="160px" height="90px"
+                               xlink:href="data:img/png;base64,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"/>
+                    </svg>
+                </a>
+                <button class="navbar-toggler border-0 p-0" type="button" data-toggle="offcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse offcanvas-collapse justify-content-end" id="navbarNav">
+                <span class="offcanvas-close"></span>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home-section">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#client-section">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#map-section">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contect-section">Ours</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <!--Header End-->
+
+    <!--Home Start-->
+    <section id="home-section" data-parallax="scroll" data-image-src="images/1.jpg" data-position="center bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h1>company <span>overview.</span></h1>
+                        <div class="content-detail">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            <div>
+                                <button class="btn btn-orange">see our portfolio</button>
+                            </div>
+                        </div>
+
+                        <a href="#history-section" class="down">
+                            <img src="data:image/svg+xml;base64,
+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzUuNDE0IDM1LjQxNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzUuNDE0IDM1LjQxNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiBjbGFzcz0iIj48Zz48Zz4KCTxnPgoJCTxwb2x5Z29uIHBvaW50cz0iMzQsOC4zNTQgMTcuNzA3LDI0LjY0NiAxLjQxNCw4LjM1NCAwLDkuOTE1IDE3LDI3LjA2MSAxOC40MTQsMjcuMDYxIDM1LjQxNCw5LjkxNSAgICIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojRkZGRUZFIiBkYXRhLW9sZF9jb2xvcj0iI0NDQzhDOCI+PC9wb2x5Z29uPgoJPC9nPgo8L2c+PC9nPiA8L3N2Zz4=" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Home End-->
+
+    <!--History Start-->
+    <section id="history-section" data-parallax="scroll" data-image-src="images/2.jpg" data-position="center bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h1><span>history</span><span>of the</span><span>company</span></h1>
+                        <div class="content-detail">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias error labore, magnam nihil quia rerum saepe. A accusamus autem dignissimos, eligendi facilis iste magni molestias officiis reprehenderit ullam? Pariatur, quibusdam.</p>
+                            <div>
+                                <button class="btn btn-orange">see our clients</button>
+                            </div>
+                        </div>
+
+                        <a href="#department-section" class="down">
+                            <img src="data:image/svg+xml;base64,
+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzUuNDE0IDM1LjQxNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzUuNDE0IDM1LjQxNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiBjbGFzcz0iIj48Zz48Zz4KCTxnPgoJCTxwb2x5Z29uIHBvaW50cz0iMzQsOC4zNTQgMTcuNzA3LDI0LjY0NiAxLjQxNCw4LjM1NCAwLDkuOTE1IDE3LDI3LjA2MSAxOC40MTQsMjcuMDYxIDM1LjQxNCw5LjkxNSAgICIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojRkZGRUZFIiBkYXRhLW9sZF9jb2xvcj0iI0NDQzhDOCI+PC9wb2x5Z29uPgoJPC9nPgo8L2c+PC9nPiA8L3N2Zz4=" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--History End-->
+
+    <!--Department Start-->
+    <section id="department-section">
+        <div class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header-content">
+                            <h1>
+                                <span>our</span>
+                                <span>department</span>
+                            </h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="items">
+                            <div class="item">
+                                <div class="item-content">
+                                    <div class="icon">
+                                        <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="59px" height="65px">
+                                            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                                  d="M57.349,6.907 C58.259,6.905 58.997,6.169 58.998,5.265 L58.998,1.646 C58.997,0.738 58.259,0.006 57.349,0.004 L1.650,0.004 C0.742,0.006 0.006,0.738 0.002,1.646 L0.002,5.265 C0.006,6.170 0.740,6.903 1.650,6.907 L2.795,6.907 L2.795,46.475 L1.650,46.475 C0.744,46.476 0.005,47.207 0.002,48.118 L0.002,51.733 C0.006,52.642 0.742,53.373 1.650,53.376 L19.496,53.376 L15.406,63.233 C15.330,63.415 15.285,63.606 15.285,63.801 C15.282,64.127 15.422,64.457 15.671,64.675 C15.918,64.893 16.247,64.994 16.587,64.994 L17.977,64.994 C18.850,64.969 19.655,64.434 20.012,63.637 L24.238,53.376 L27.295,53.376 L27.295,63.351 C27.297,64.257 28.032,64.992 28.941,64.994 L30.059,64.994 C30.970,64.992 31.707,64.257 31.707,63.351 L31.707,53.376 L34.763,53.376 L38.991,63.637 C39.346,64.435 40.151,64.970 41.024,64.994 L42.416,64.994 C42.753,64.994 43.082,64.893 43.330,64.674 C43.579,64.456 43.717,64.127 43.714,63.801 C43.714,63.607 43.672,63.416 43.596,63.234 L39.504,53.376 L57.349,53.376 C58.259,53.375 58.997,52.640 58.998,51.733 L58.998,48.118 C58.997,47.209 58.258,46.476 57.349,46.475 L56.206,46.475 L56.206,6.907 L57.349,6.907 ZM19.027,63.236 C18.916,63.570 18.332,63.959 17.977,63.935 L16.587,63.935 C16.313,63.898 16.376,63.889 16.349,63.801 C16.349,63.768 16.358,63.714 16.387,63.641 L20.647,53.376 L23.089,53.376 L19.027,63.236 ZM30.645,63.351 C30.644,63.669 30.376,63.935 30.059,63.935 L28.941,63.935 C28.623,63.935 28.358,63.669 28.358,63.351 L28.358,53.376 L30.645,53.376 L30.645,63.351 ZM42.614,63.637 C42.644,63.710 42.652,63.766 42.652,63.801 C42.625,63.890 42.685,63.898 42.416,63.935 L41.024,63.935 C40.669,63.959 40.086,63.569 39.974,63.236 L35.911,53.376 L38.353,53.376 L42.614,63.637 ZM57.349,47.535 C57.670,47.535 57.934,47.798 57.935,48.118 L57.935,51.733 C57.934,52.051 57.670,52.316 57.349,52.316 L31.707,52.316 L31.707,52.315 L27.295,52.315 L27.295,52.316 L1.650,52.316 C1.334,52.316 1.066,52.051 1.066,51.733 L1.066,48.118 C1.066,47.798 1.332,47.535 1.650,47.535 L57.349,47.535 ZM3.858,46.473 L3.858,6.907 L55.142,6.907 L55.142,46.473 L3.858,46.473 ZM1.650,5.847 C1.335,5.847 1.066,5.578 1.066,5.265 L1.066,1.646 C1.066,1.330 1.334,1.065 1.650,1.064 L57.349,1.064 C57.670,1.065 57.934,1.328 57.935,1.646 L57.935,5.265 C57.934,5.580 57.669,5.847 57.349,5.847 L1.650,5.847 ZM26.456,41.263 L32.546,41.263 L32.546,17.575 L26.456,17.575 L26.456,41.263 ZM27.520,18.634 L31.481,18.634 L31.481,40.203 L27.520,40.203 L27.520,18.634 ZM37.354,41.264 L43.444,41.264 L43.444,18.146 L37.354,18.146 L37.354,41.264 ZM38.417,19.205 L42.381,19.205 L42.381,40.205 L38.417,40.205 L38.417,19.205 ZM15.556,41.263 L21.646,41.263 L21.646,31.188 L15.556,31.188 L15.556,41.263 ZM16.619,32.248 L20.584,32.248 L20.584,40.203 L16.619,40.203 L16.619,32.248 Z"/>
+                                        </svg>
+                                    </div>
+                                    <h2 class="h5">ANALYZING</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-content">
+                                    <div class="icon">
+                                        <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="66px" height="66px">
+                                            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                                  d="M65.028,50.770 L64.652,51.146 L65.028,50.770 L47.131,32.876 L53.515,26.491 L55.766,24.240 L55.768,24.241 L62.295,17.711 C62.944,17.061 63.268,16.203 63.268,15.352 C63.268,14.500 62.942,13.642 62.295,12.995 L61.919,13.370 L62.294,12.995 L53.003,3.705 C52.355,3.057 51.497,2.731 50.645,2.732 C49.794,2.731 48.937,3.057 48.289,3.705 L42.513,9.482 L42.511,9.480 L40.259,11.733 L40.259,11.733 L33.124,18.868 L15.229,0.974 C14.580,0.325 13.723,0.000 12.872,0.000 C12.018,0.000 11.160,0.325 10.513,0.974 L5.743,5.743 L0.975,10.511 C0.327,11.159 0.001,12.016 0.001,12.868 C0.001,13.721 0.327,14.579 0.977,15.229 L3.369,17.622 L4.911,19.165 L4.912,19.164 L8.465,22.717 L8.840,23.093 L10.392,24.646 L10.392,24.645 L14.840,29.092 L15.875,30.128 L15.876,30.128 L18.870,33.122 L5.737,46.254 L5.303,46.687 L5.223,47.189 L2.620,63.377 L18.511,60.825 L19.147,60.723 L19.336,60.669 L19.574,60.432 L32.877,47.130 L35.873,50.126 L35.873,50.126 L36.444,50.697 L41.353,55.605 L41.352,55.605 L41.543,55.795 L46.835,61.087 L46.834,61.088 L48.761,63.016 L48.763,63.015 L50.773,65.025 C51.420,65.674 52.278,65.998 53.131,65.998 C53.981,65.998 54.838,65.674 55.489,65.025 L60.258,60.256 L65.028,55.485 C65.676,54.837 66.000,53.980 65.999,53.128 C65.999,52.276 65.675,51.418 65.028,50.770 ZM49.040,4.457 C49.481,4.016 50.061,3.795 50.645,3.795 C51.232,3.795 51.811,4.016 52.252,4.457 L61.544,13.747 L61.544,13.745 C61.984,14.187 62.206,14.768 62.206,15.352 C62.206,15.937 61.984,16.517 61.544,16.958 L55.768,22.736 L43.265,10.233 L49.040,4.457 ZM41.013,12.484 L42.512,10.985 L55.014,23.488 L53.515,24.987 L53.384,24.856 L41.013,12.484 ZM9.435,12.288 L9.860,12.714 L4.912,17.661 L4.625,17.373 L4.486,17.235 L9.435,12.288 ZM9.969,22.717 L12.192,20.494 L12.616,20.920 L10.393,23.142 L9.969,22.717 ZM15.450,28.200 L17.672,25.978 L18.096,26.402 L15.876,28.624 L15.450,28.200 ZM16.628,29.376 L19.599,26.402 L17.672,24.475 L14.699,27.447 L11.145,23.894 L14.120,20.920 L12.190,18.991 L9.217,21.965 L5.664,18.412 L11.364,12.714 L9.432,10.784 L9.058,11.160 L3.735,16.484 L1.728,14.477 C1.285,14.034 1.066,13.455 1.065,12.868 C1.066,12.283 1.285,11.705 1.726,11.263 L6.497,6.494 L11.265,1.725 C11.705,1.285 12.285,1.064 12.872,1.064 C13.457,1.064 14.035,1.285 14.478,1.725 L32.372,19.620 L19.622,32.370 L16.628,29.376 ZM8.895,61.292 L3.905,62.092 L4.756,56.804 L9.196,61.244 L8.895,61.292 ZM10.491,61.036 L4.964,55.509 L6.195,47.851 L7.731,48.898 L9.278,49.952 L9.931,51.166 L11.637,54.341 L16.027,56.703 L18.142,59.807 L10.491,61.036 ZM19.133,59.371 L17.151,56.463 L16.759,55.889 L13.977,54.391 L12.422,53.554 L11.724,52.258 L10.090,49.218 L6.634,46.863 L19.622,33.874 L19.623,33.874 L33.876,19.620 L33.876,19.620 L40.259,13.236 L48.972,21.948 L52.763,25.741 L46.379,32.124 L46.379,32.124 L32.125,46.378 L32.125,46.378 L19.133,59.371 ZM37.375,50.124 L39.598,47.902 L40.022,48.327 L37.800,50.547 L37.375,50.124 ZM42.856,55.606 L45.078,53.382 L45.503,53.808 L43.280,56.029 L42.856,55.606 ZM53.286,56.138 L53.711,56.563 L48.763,61.513 L48.338,61.087 L53.286,56.138 ZM64.275,54.734 L59.505,59.504 L54.737,64.274 C54.295,64.714 53.715,64.935 53.131,64.935 C52.545,64.935 51.965,64.714 51.525,64.274 L49.514,62.263 L55.213,56.563 L53.284,54.634 L52.910,55.011 L47.586,60.336 L44.033,56.782 L47.007,53.808 L45.077,51.880 L42.103,54.854 L38.550,51.300 L41.524,48.328 L39.598,46.397 L36.624,49.374 L33.628,46.378 L33.760,46.247 L46.381,33.627 L64.275,51.522 C64.716,51.963 64.935,52.543 64.935,53.128 C64.935,53.713 64.716,54.293 64.275,54.734 Z"/>
+                                        </svg>
+                                    </div>
+                                    <h2 class="h5">DESIGN</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-content">
+                                    <div class="icon">
+                                        <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="67px" height="51px">
+                                            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                                  d="M66.990,2.053 C66.989,0.920 66.062,-0.003 64.916,-0.004 L2.087,-0.004 C0.937,-0.003 0.010,0.920 0.010,2.053 L0.010,35.947 L0.008,42.440 C0.010,43.574 0.937,44.496 2.087,44.497 L26.894,44.497 L26.894,46.034 C26.891,47.351 26.271,48.252 25.555,48.900 C24.885,49.504 24.143,49.837 23.874,49.943 L23.317,49.943 C23.023,49.943 22.783,50.102 22.783,50.297 L22.783,50.650 C22.783,50.844 23.023,51.003 23.317,51.003 L43.684,51.003 C43.978,51.003 44.219,50.844 44.219,50.650 L44.219,50.297 C44.219,50.102 43.978,49.943 43.684,49.943 L43.127,49.943 C42.857,49.837 42.114,49.504 41.443,48.900 C40.728,48.252 40.107,47.351 40.106,46.034 L40.104,46.034 L40.104,44.497 L64.916,44.497 C66.062,44.496 66.989,43.574 66.990,42.440 L66.992,35.947 L66.990,2.053 ZM40.726,49.686 C40.821,49.772 40.917,49.852 41.014,49.929 L25.986,49.929 C26.082,49.852 26.178,49.772 26.274,49.686 C27.137,48.918 27.967,47.707 27.965,46.034 L27.963,44.497 L39.036,44.497 L39.036,46.034 C39.031,47.707 39.863,48.918 40.726,49.686 ZM65.922,35.947 L65.920,42.440 C65.920,42.984 65.464,43.437 64.916,43.437 L2.087,43.437 C1.535,43.437 1.078,42.984 1.077,42.440 L1.078,35.947 L1.077,2.053 C1.078,1.510 1.536,1.055 2.087,1.055 L64.916,1.055 C65.464,1.055 65.920,1.510 65.922,2.053 L65.922,35.947 ZM3.171,35.363 L63.829,35.363 L63.829,3.230 L3.171,3.230 L3.171,35.363 ZM4.241,4.289 L62.760,4.289 L62.760,34.304 L4.241,34.304 L4.241,4.289 Z"/>
+                                        </svg>
+                                    </div>
+                                    <h2 class="h5">PROGRAMING</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-content">
+                                    <div class="icon">
+                                        <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="53px" height="53px">
+                                            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                                  d="M50.443,0.005 L48.248,0.005 C46.835,0.006 45.685,1.163 45.683,2.587 L45.683,4.177 C36.612,11.734 29.309,14.537 24.812,15.569 C24.563,15.079 24.061,14.740 23.476,14.739 L23.476,14.738 L19.260,14.738 L5.732,14.739 C2.581,14.740 0.007,17.331 0.007,20.506 L0.007,28.826 C0.007,31.998 2.581,34.590 5.732,34.591 L8.351,34.591 L8.351,51.602 C8.352,52.371 8.971,52.993 9.733,52.994 L17.211,52.994 C17.248,52.994 17.280,52.990 17.305,52.986 C17.334,52.990 17.376,52.993 17.430,52.994 C19.311,52.994 20.839,51.457 20.839,49.558 C20.839,49.018 20.707,48.513 20.489,48.067 L20.558,47.926 L20.312,47.745 C20.227,47.607 20.132,47.479 20.031,47.357 C19.624,46.641 18.849,44.723 18.593,40.348 L18.593,34.591 L23.476,34.591 C24.061,34.590 24.562,34.252 24.812,33.762 C29.309,34.793 36.612,37.597 45.683,45.155 L45.683,46.744 C45.685,48.167 46.835,49.323 48.248,49.324 L50.443,49.324 C51.856,49.323 53.004,48.167 53.007,46.744 L53.007,2.587 C53.004,1.163 51.856,0.006 50.443,0.005 ZM19.267,47.856 L19.286,47.891 L19.314,47.923 C19.415,48.041 19.501,48.160 19.576,48.292 L19.602,48.336 C19.808,48.707 19.930,49.116 19.930,49.558 C19.927,50.952 18.810,52.076 17.430,52.078 C17.427,52.080 17.411,52.074 17.319,52.065 L17.280,52.061 L17.239,52.065 C17.205,52.068 17.178,52.074 17.159,52.078 L9.733,52.078 C9.476,52.077 9.262,51.861 9.261,51.602 L9.261,34.592 L17.684,34.592 L17.684,40.403 C17.952,44.941 18.763,46.988 19.267,47.856 ZM23.476,33.675 L5.732,33.675 C3.087,33.669 0.921,31.488 0.916,28.826 L0.916,20.506 C0.921,17.841 3.087,15.660 5.732,15.656 L23.476,15.656 C23.803,15.656 24.075,15.929 24.075,16.257 L24.075,33.072 C24.075,33.401 23.803,33.675 23.476,33.675 ZM45.682,43.968 C36.760,36.669 29.522,33.897 24.985,32.861 L24.985,16.469 C29.522,15.434 36.760,12.663 45.682,5.363 L45.682,43.968 ZM52.096,46.744 C52.095,47.656 51.349,48.407 50.443,48.408 L48.248,48.408 C47.341,48.407 46.594,47.656 46.593,46.744 L46.593,45.914 L46.594,45.915 L46.594,3.415 L46.593,3.416 L46.593,2.587 C46.594,1.675 47.341,0.922 48.248,0.921 L50.443,0.921 C51.349,0.922 52.095,1.675 52.096,2.587 L52.096,46.744 Z"/>
+                                        </svg>
+                                    </div>
+                                    <h2 class="h5">TESTING</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-content">
+                                    <div class="icon">
+                                        <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="61px" height="61px">
+                                            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                                  d="M30.500,3.801 C15.752,3.801 3.797,15.753 3.797,30.501 C3.797,45.247 15.752,57.201 30.500,57.201 C45.245,57.201 57.201,45.247 57.201,30.501 C57.201,15.753 45.245,3.801 30.500,3.801 ZM48.630,48.631 C43.988,53.272 37.581,56.141 30.500,56.141 C23.417,56.141 17.009,53.272 12.369,48.631 C7.726,43.990 4.858,37.583 4.858,30.501 C4.858,23.419 7.726,17.012 12.369,12.369 C17.009,7.730 23.417,4.861 30.500,4.861 C37.581,4.861 43.988,7.730 48.630,12.369 C53.271,17.012 56.140,23.419 56.140,30.501 C56.140,37.583 53.271,43.990 48.630,48.631 ZM30.500,-0.007 C13.651,-0.007 -0.005,13.653 -0.005,30.501 C-0.005,47.349 13.651,61.006 30.500,61.006 C47.346,61.006 61.005,47.349 61.005,30.501 C61.005,13.653 47.346,-0.007 30.500,-0.007 ZM51.321,51.321 C45.991,56.651 38.631,59.946 30.500,59.947 C22.366,59.946 15.007,56.651 9.678,51.321 C4.348,45.991 1.053,38.634 1.053,30.501 C1.053,22.368 4.348,15.010 9.678,9.679 C15.007,4.349 22.366,1.053 30.500,1.053 C38.631,1.053 45.991,4.349 51.321,9.679 C56.652,15.010 59.944,22.368 59.946,30.501 C59.944,38.634 56.652,45.991 51.321,51.321 ZM33.558,33.177 C34.184,32.461 34.567,31.527 34.567,30.501 C34.567,28.899 33.640,27.518 32.295,26.854 L34.267,12.693 C34.345,12.131 33.949,11.608 33.388,11.530 L33.305,11.518 C32.742,11.439 32.219,11.835 32.141,12.396 L30.183,26.448 C28.104,26.608 26.465,28.330 26.435,30.442 L19.284,32.887 C18.747,33.071 18.458,33.658 18.641,34.196 L18.668,34.277 C18.852,34.813 19.442,35.102 19.977,34.919 L26.975,32.525 C27.678,33.745 28.991,34.569 30.499,34.571 C31.385,34.570 32.201,34.283 32.869,33.803 L41.688,45.479 C42.029,45.932 42.476,46.174 42.680,46.022 C42.882,45.867 42.770,45.372 42.429,44.919 L33.558,33.177 ZM30.499,33.510 C28.841,33.507 27.493,32.159 27.490,30.501 C27.493,28.840 28.840,27.494 30.499,27.492 C32.161,27.494 33.505,28.840 33.508,30.501 C33.505,32.159 32.161,33.507 30.499,33.510 Z"/>
+                                        </svg>
+                                    </div>
+                                    <h2 class="h5">SERVICES</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Department End-->
+
+    <!--Blog Start-->
+    <section id="blog-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-flex flex-wrap">
+                    <div class="col-12 col-sm-6 col-lg-4 p-0">
+                        <article class="article">
+                            <div class="content-wrapper">
+                                <div class="content">
+                                    <h2>Thoughtful Reduction.</h2>
+                                    <p>
+                                        I would say my biggest pet peeve related to the industry would be people focusing on technology instead of design.
+                                    </p>
+                                </div>
+                            </div>
+                            <img class="img-responsive" src="images/blog/1.jpg" alt="">
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 p-0">
+                        <article class="article">
+                            <div class="content-wrapper">
+                                <div class="content">
+                                    <h2>Thoughtful Reduction.</h2>
+                                    <p>
+                                        I would say my biggest pet peeve related to the industry would be people focusing on technology instead of design.
+                                    </p>
+                                </div>
+                            </div>
+                            <img class="img-responsive" src="images/blog/2.jpg" alt="">
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 p-0">
+                        <article class="article">
+                            <div class="content-wrapper">
+                                <div class="content">
+                                    <h2>Thoughtful Reduction.</h2>
+                                    <p>
+                                        I would say my biggest pet peeve related to the industry would be people focusing on technology instead of design.
+                                    </p>
+                                </div>
+                            </div>
+                            <img class="img-responsive" src="images/blog/3.jpg" alt="">
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 p-0">
+                        <article class="article">
+                            <div class="content-wrapper">
+                                <div class="content">
+                                    <h2>Thoughtful Reduction.</h2>
+                                    <p>
+                                        I would say my biggest pet peeve related to the industry would be people focusing on technology instead of design.
+                                    </p>
+                                </div>
+                            </div>
+                            <img class="img-responsive" src="images/blog/4.jpg" alt="">
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 p-0">
+                            <article class="article">
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <h2>Thoughtful Reduction.</h2>
+                                        <p>
+                                            I would say my biggest pet peeve related to the industry would be people focusing on technology instead of design.
+                                        </p>
+                                    </div>
+                                </div>
+                                <img class="img-responsive" src="images/blog/3.jpg" alt="">
+                            </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 p-0">
+                        <article class="article">
+                            <div class="content-wrapper">
+                                <div class="content">
+                                    <h2>Thoughtful Reduction.</h2>
+                                    <p>
+                                        I would say my biggest pet peeve related to the industry would be people focusing on technology instead of design.
+                                    </p>
+                                </div>
+                            </div>
+                            <img class="img-responsive" src="images/blog/4.jpg" alt="">
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Blog End-->
+
+    <!--Word Start-->
+    <section id="word-section" class="text-center ptb-8 ptb-md-6"  data-parallax="scroll" data-image-src="images/1.jpg" data-position="center bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>word of the (seo)</h1>
+                </div>
+                <div class="col-12 col-md-8 m-auto">
+                    <blockquote class="lead mt-2">
+                        “Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod”
+                    </blockquote>
+                    <span>Ahmed Dabak</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Word End-->
+
+    <!--Client Start-->
+    <section id="client-section" class="text-center ptb-6" data-parallax="scroll" data-image-src="images/3.jpg"  data-position="center center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="mb-6">our clients</h1>
+                </div>
+                <div class="col-12 col-lg-12 m-auto">
+                    <div class="row">
+                        <div class="col-12 col-lg-4 p-4 p-lg-3">
+                            <h2 class="h6">NEW BUSINESS</h2>
+                            <p>If it were easy to nut out tricky design problems, I might be out of a job.</p>
+                        </div>
+                        <div class="col-12 col-lg-4 p-4 p-lg-3">
+                            <h2 class="h5">BE MAKER</h2>
+                            <p>Heaven, I believe, is right here, just waiting for us to create it.</p>
+                        </div>
+                        <div class="col-12 col-lg-4 p-4 p-lg-3">
+                            <h2 class="h6">JOURNEY</h2>
+                            <p>There are two ways of constructing a software design.</p>
+                        </div>
+                        <div class="col-12 col-lg-4 p-4 p-lg-3">
+                            <h2 class="h6">CONFERENCE</h2>
+                            <p>But it’s not the accepted trajectory of the profession.</p>
+                        </div>
+                        <div class="col-12 col-lg-4 p-4 p-lg-3">
+                            <h2 class="h6">EXPLORE</h2>
+                            <p>Have no fear of perfection – you’ll never reach it.</p>
+                        </div>
+                        <div class="col-12 col-lg-4 p-4 p-lg-3">
+                            <h2 class="h6">NEW WORLD</h2>
+                            <p>At the end of the day, pretty colors make people drool.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Client End-->
+
+    <!--Tech Start-->
+    <section id="tech-section" class="p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="62px" height="66px">
+                                <image  x="0px" y="0px" width="62px" height="66px"  xlink:href="data:img/png;base64,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" />
+                            </svg>
+                        </div>
+                        <div class="item">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="55px" height="76px">
+                                <image  x="0px" y="0px" width="55px" height="76px"  xlink:href="data:img/png;base64,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" />
+                            </svg>
+                        </div>
+                        <div class="item">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="54px" height="75px">
+                                <image  x="0px" y="0px" width="54px" height="75px"  xlink:href="data:img/png;base64,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" />
+                            </svg>
+                        </div>
+                        <div class="item">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="56px" height="55px">
+                                <image  x="0px" y="0px" width="56px" height="55px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA3CAQAAADz2UFAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjAxsRLxyHRcSnAAADFElEQVRYw+3Yf2jUdRzH8cfuTm9uhaxaU0STSIwSxcIssR8Ihf3SFRFREYH9ETiMhkG5PyoVE6KIcUVQYYZgP0gqYjL2TyUKIzIpRsSYYJJsx9KgttzWbf3R3ee+d566zbv9da+/Xp/35/35Pvl8vp/v5/25q9k8YrYZVMyZmcQRm1lcFVgFVoFVYBVYBVaBVWAVOC0lpjFmyB9imJB0dVFfxkm/+V1Gk4UWqy0H8HM7JcWMWGlvwTX6iH0OOm0UCXXWesKGQsZ0gIN6s67eeIiOe1+bwUje3w7o8LyXJS8NmFRjIgvM74HPtBo6J/es3WhTnwtMZ9NMlHAn7Ijg4vmFTk2kXvPdpc2wlDr1ZN0sT7tPQrf3DNAy37OWlxs44cfgH9GuFg9YZovltrstmloeYEY6+NvDp9Bsnhs0FqaW58OPmRN8d3izSXcW48oHXBL8p17154VSy6M71GXdP3bY4B0nKwtcrTn4cYc8525tjlUOWGebZZH2v361y3ovFc+0fNXiRvvcUxQbsFuzzsoAWeFjrxfME6mjnvJlZYA02Oprb1gTLUuptBf8UhkgXKPVV/a6P+xbqV77c3VlOsD8mEykPEV1pUd9ot38EPk2V7gqd8Wot8mL4tlWv9NTAX7vcKSVCS4ROYsPe9yeonGrwpGXMZYbcjEN2m+nBl+4Phv5OZyWcyUw6riP7NHviHnujYw9ajjr4mZNBphxULsupG2x3XVGdTgQ+leAPo/5CZzwjBYbNYo5o9Ou8I4XaZrcDD/UlXVdelxrVE+o7LXWgSZLs0BO2eYDC8Sk9eaWsSVmvYbJAONaHdMXHnaqoHdjtrRe4W1DOkK8L4zIaa0nc/Zim2aNdgtL9tzslbAlGr3r4bAji9Sy2lu5BSV+y1aXXRC5xK0G9BuJxOZ6SMrSgsiDFkj7y2jBCi3q2OTNaGbN5v48/bwa9o1DjhtWo85id1lX8n/ktG4/6DNkXMJVVlrlpsKUyQH/15AxzM4fWefRWWPGxc0ptchTuUTVTzKv9txfFHnF1EwBWQbFXD6zwP8AJNe5RKwFsAoAAAAASUVORK5CYII=" />
+                            </svg>
+                        </div>
+                        <div class="item">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="60px" height="68px">
+                                <image  x="0px" y="0px" width="60px" height="68px"  xlink:href="data:img/png;base64,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" />
+                            </svg>
+                        </div>
+                        <div class="item">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="63px" height="66px">
+                                <image  x="0px" y="0px" width="63px" height="66px"  xlink:href="data:img/png;base64,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" />
+                            </svg>
+                        </div>
+                        <div class="item">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="76px" height="38px">
+                                <image  x="0px" y="0px" width="76px" height="38px"  xlink:href="data:img/png;base64,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" />
+                            </svg>
+                        </div>
+                        <div class="item">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="77px" height="37px">
+                                <image  x="0px" y="0px" width="77px" height="37px"  xlink:href="data:img/png;base64,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" />
+                            </svg>
+                        </div>
+                        <div class="item">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="81px" height="36px">
+                                <image  x="0px" y="0px" width="81px" height="36px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAAAkCAQAAABbaR7PAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjAxsRMTKP0va3AAAFPElEQVRYw83Ya4xV1RUH8N+duQwgTEVAiFJtRcU3saJBDe0gmGrUCvVRHVBhfBVEEZ9pjUVKP9gYYy0lVWNEqwGtKRVtUHDQiCYoioIfiAozCCrq+ADUAdEM3H6Yffc9594DOAkTZ90P97/W2Wft/9qPtdc+uSk6KCc53U/lol6w2TLPdtTND5XZ8h18Y65xmfblxmvuHJJVHWr90i4IMtwK/TuHYkdGsUFdxKtsQpXDDQqWPh5w/o9NcVr432qsJfH9u9wQ8HkG+GzvU/zhE13riICujgRpc6NXonbc3ifYEYo9FQJ6sexJY0Tdf1yKO+0IqHfZk76dQawkHU06WWH9wyJNujvYa51BsWNJJ1vWWWwIFtnSVSkywbNWG9YZBPcOxYkeAcsN7ZoUL/dwQNVed2zXozjRQwmtu+WO7FoUJ8QRLMo+VhjSVShWmRTWYFp6WbF3N06uol7sH0+RL1P2AdbpBY72Dnr4NrbrpQc+1VcNWB3WZL9iL76o6LmPn9mqgCqbyvraT387kVOrqXwU/22jj8PvwmAb5FxsUx30Voyx3XhwvxGhwG0y1LtgKvhN9LTRcxUUa62yVpMmazTHYNoDa7ZGkyZrvaVHmuLBfqcm/maCbl7wtHqtvgZtPnShBV40zwTPm2xrOJt/7j2/0Oj8cIpPT/g6syIhfeiaiPc1P/Fkof0ivmj252mKt6e0Iw3HG47APHO0gs3+6UmcZq1HnUGsgNqw3a/9FxzrxJS3P1SM433uj7jOJQFNMzxap3syvV16aihzcjtWBtxgMOhvcrBsDCf897JkRplenxibokz2dsRz9MMQf4uWBf5CmuLkiqLiHAdq8EDKVrxYPWWkNruS/TMq8Fsy2o2OPrqZRWLCN/htO0hSLE7F+25KjcUkcypcL3Ce3cnUiG6I9eS1iXtjUb50VsTjvBJPp4JfFc0limPtH9BS9/gk4Mv1xhUeSzmeX4xwF5J3XezqXv8LuNaEjLaN7oh4RERjfFBJ8baI5hGPtWpXgcvMTRC8wO6lwb4BLSRxx56e2Xqm58ssd8SwEhRPcFJALRrxYGxRXEGXeAIs2CNBbo7o72j2atAOcVpm+zOsTmjzQroro1hKN7PABzGyAyKlei9buocphl/GU3ptuIiVurwt840eqVvPgemH7RT7xY6/82hApX1cymh1Ru6RYJJQcbks0RLQ6ZlFxiqHJbSRyWkuUiylg5xF1ttgg79G2zBDcbZlFltsWcVeLqS0wYkwfm+99TZYrWdGwEWZH5N/Uc7xp5KSRz6RImockzkuYw12StAOKnu6PRVuksIhGb4udZ2tCX16IuSXY6qZaXlxqVVhYiLGbBlD4hwov5QOSOAaV+7BV961Ce1sf454sbrEnfw5A9tBbgprHB7Mr2pOfZYbFZfuOM+EM5otjvFxoptiffimE02LB9hmC1O+DopfhDbFuuZQTbHFDoO0GGhjrKjecXT7x7vRkeBOp5ZFfK6nA7rb494PE9fH2+70ngIGmur40OYR3BrfvSV1ZYDWUG/2dYH/oCr1XaNBC1qMD8mNo8w1ntyUpXH+n1BfMS1bYhKu863XdzOBrWqN8kLQvvOTivLinviBaqUTsMToxCSfGfFTxkZ8/exZuSml/TjMWxUd3xV3+w55dydO77RsM8JK3+sW9MdcVtFmcOIj6cnG+GPUCnrbFrW8LWG8oT5vpjYFOV9lEORO36Agp0aVm61wjaGJ7ZWzU4tGM3ykygzVCnL4V4avdSYZoIBq1b5yb0xXzyQI0maUiwPuKf9/N9xEJyGB2mEAAAAASUVORK5CYII=" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Tech End-->
+
+    <!--Map Start-->
+    <section id="map-section">
+        <div id="map" style="height: 480px;"></div>
+    </section>
+    <!--Map End-->
+
+    <!--Contact Start-->
+    <section id="contect-section" class="ptb-6 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 col-lg-8 m-auto">
+                    <h1 class="text-muted mb-6">contect with us</h1>
+
+                    <form action="#" method="post">
+                        <div class="form-row">
+                            <div class="col-12 col-lg">
+                                <div class="form-group">
+                                    <input name="name" type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg">
+                                <div class="form-group">
+                                    <input name="email" type="text" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                                <textarea name="content" class="form-control" cols="30" rows="10"
+                                          placeholder="Type Your Content Here."></textarea>
+                        </div>
+                        <div class="form-group text-right">
+                            <button type="submit" class="btn btn-orange mt-3">send your email</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact End-->
+
+    <!--Footer Start-->
+    <footer id="footer" class="ptb-6" data-parallax="scroll" data-image-src="images/contect-us.png" data-position="center center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 mr-0 mr-lg-3">
+                    <h3 class="h5 mb-5">informations.</h3>
+                    <p>lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed
+                        odio
+                        sit amet auctror a ornare odio non mauris vitae erat in elit</p>
+                </div>
+                <div class="col-12 col-lg-4 mt-5 mt-lg-0">
+                    <h3 class="h5 mb-5">our company.</h3>
+                    <div class="d-flex">
+                        <span class="mr-3">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="14px" height="19px">
+                                <image x="0px" y="0px" width="14px" height="19px"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAATCAQAAAAKCfQfAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjAxsNODM8Kyd8AAABI0lEQVQoz1WPvUqcURRF14xRsJBhioBNQC0UfAMhSZNnmEZCSDNMIVooKIQgBE2QIDZBYZpBEgLBHwgpfAMhjY2Yp1BwTYpAQNgW3zd/t9p7rXMv5xJC8Kkd741Rvzpd0EqAboMTuhxzCSzxljqva9+BYMP4uZgt3/lkXA44ZTwYViH40VjHbz6UoOWtd66U7b9nGPdDcM146BfjZgjuGIyvQjDuhuC2sRp8YapAFboV4AaAPwWhAvjXTgj+ML70ufFnCLb9hx9MucIvY7woW9zDMWOzBPMulOmNcZzgUe/u0D9jO/Ti+xH1rhgvyqpxsq8mjOt9Gbz1qi9/e1ekHpg1tkKwaZwbkcEN44zPjFs9NrzGqTGeD0glDE73mie1xUF/BIF4Krpuvw4hAAAAAElFTkSuQmCC"/>
+                            </svg>
+                        </span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+                    </div>
+                    <div class="d-flex">
+                        <span class="mr-3">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="17px" height="17px">
+                                <image x="0px" y="0px" width="17px" height="17px"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAQAAACRZI9xAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjAxsNOQCa4HcrAAABE0lEQVQoz3XQsUvUcRjH8ddPfgROv5IodIimo7qhqSiXBGlw0a04Iom4TXALl2vo39ClliNtcRIlKWhQukEwxKD9vAsJH1ua4tugUna/3/MZnw/v98OThcrZd9Pt4stQZaHtstd2j+/kFYWnGgo/DetkpaK6PVPWcdFRuaiODnilVy5accsPVxya96jq3C4OfbZdvCunTFl0TdNdOWWUe9Y88cuSB34zSJnw0QttScsnECepxfMQ4lmkmAuRYvlkk04pTYsy9/W89NCmZMPjM2yON2ZN6+hjxJjkrcY/6vga/bh6qrsQrUjRCn+T5G7Y8h2Meq9u0ofz9w+pGbdpxpIDXcP/F8iC63Zc8s2C1cEnFf4Aqo9gDQs805cAAAAASUVORK5CYII="/>
+                            </svg>
+                        </span>
+                        <p>(+62) 21-2224 3333</p>
+                    </div>
+                </div>
+                <div class="col-12 mt-5 text-center text-lg-right">
+                    <p>Copyright © 2016 - SmaSoSo Company - Germany.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer End-->
+</div>
+
+<!--js-->
+<script src="js/scripts.d41d8cd98f00b204e9800998ecf8427e.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+</body>
+</html>
+
